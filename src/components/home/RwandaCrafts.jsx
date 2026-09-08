@@ -40,13 +40,9 @@ export const RwandaCrafts = () => {
           </button>
         </div>
 
-        {/* Featured Products */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-          gap: '1.5rem'
-        }}>
-          {rwandaProducts.map(prod => (
+        {/* Featured Products: 3 Cards in 1 Row */}
+        <div className="product-grid-3">
+          {rwandaProducts.slice(0, 3).map(prod => (
             <ProductCard key={prod.id} product={prod} />
           ))}
         </div>

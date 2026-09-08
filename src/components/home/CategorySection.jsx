@@ -41,13 +41,9 @@ export const CategorySection = ({ title, subtitle, categoryName, badgeText, bgLi
           </button>
         </div>
 
-        {/* Products Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-          gap: '1.25rem'
-        }}>
-          {categoryProducts.slice(0, 4).map((product) => (
+        {/* Products Grid: 3 Cards in 1 Row */}
+        <div className="product-grid-3">
+          {categoryProducts.slice(0, 3).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

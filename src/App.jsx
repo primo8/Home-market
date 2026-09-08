@@ -102,16 +102,41 @@ export const App = () => {
               bgLight={true}
             />
 
-            {/* 11. Top Verified Rwandan Merchants & Importers */}
+            {/* 11. Solar & Clean Energy Solutions */}
+            <CategorySection
+              title="Solar Power, Lithium Batteries & Inverters"
+              subtitle="Off-grid and hybrid clean energy systems with nationwide installation across Rwanda."
+              categoryName="Solar & Clean Energy"
+              badgeText="Eco Clean Energy"
+            />
+
+            {/* 12. Beauty & Personal Care */}
+            <CategorySection
+              title="Beauty, Skincare & Fragrances"
+              subtitle="Dermatologically certified skincare, organic shea body lotions, and designer perfumes."
+              categoryName="Beauty & Personal Care"
+              badgeText="Beauty & Care"
+              bgLight={true}
+            />
+
+            {/* 13. Tools & Professional Hardware */}
+            <CategorySection
+              title="Tools, Power Drills & Building Hardware"
+              subtitle="Heavy-duty cordless power tools, telescopic ladders, and contractor toolkits."
+              categoryName="Tools & Hardware"
+              badgeText="Pro Hardware"
+            />
+
+            {/* 14. Top Verified Rwandan Merchants & Importers */}
             <TopSellers />
 
-            {/* 12. Strategic Investor Vision Callout */}
+            {/* 15. Strategic Investor Vision Callout */}
             <InvestorCallout />
 
-            {/* 13. Rwanda FDA Compliance, Trust & Safety */}
+            {/* 16. Rwanda FDA Compliance, Trust & Safety */}
             <TrustFeatures />
 
-            {/* 14. Mobile App Promotion & Newsletter */}
+            {/* 17. Mobile App Promotion & Newsletter */}
             <AppDownload />
           </>
         )}

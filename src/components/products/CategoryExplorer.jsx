@@ -357,13 +357,9 @@ export const CategoryExplorer = () => {
             </div>
           </div>
 
-          {/* Products Grid */}
+          {/* Products Grid: 3 Cards per Row */}
           {filteredProducts.length > 0 ? (
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))',
-              gap: '1.25rem'
-            }}>
+            <div className="product-grid-3">
               {filteredProducts.map((p) => (
                 <ProductCard key={p.id} product={p} />
               ))}

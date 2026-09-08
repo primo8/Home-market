@@ -83,13 +83,9 @@ export const FlashDeals = () => {
           </div>
         </div>
 
-        {/* Deals Products Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-          gap: '1.25rem'
-        }}>
-          {flashProducts.slice(0, 4).map((product) => (
+        {/* Deals Products Grid: 3 Cards in 1 Row */}
+        <div className="product-grid-3">
+          {flashProducts.slice(0, 3).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

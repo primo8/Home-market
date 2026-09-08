@@ -17,11 +17,12 @@ export const HeroBanner = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #0A192F 0%, #0F294A 50%, #1E40AF 100%)',
+      background: 'linear-gradient(135deg, rgba(10, 25, 47, 0.92) 0%, rgba(15, 41, 74, 0.88) 50%, rgba(30, 64, 175, 0.82) 100%), url("/image/images (4).jfif") center/cover no-repeat',
       color: '#FFFFFF',
       position: 'relative',
       overflow: 'hidden',
-      padding: '4.5rem 0 5rem 0'
+      padding: '4.5rem 0 5rem 0',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.12)'
     }}>
       {/* Subtle Background Glows */}
       <div style={{
